@@ -1,1 +1,8 @@
 div{display: inline-block;}
+
+
+
+.main {width: 600; background-color: aqua;}
+div{display: inline-block; vertical-align: top; padding: 5;}
+section{padding: 5;}
+.sub {text-align: center; margin: 5px;}
