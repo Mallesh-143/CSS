@@ -1,0 +1,8 @@
+div{display: inline-block;}
+
+
+
+.main {width: 600; background-color: aqua; margin: 70px;}
+div{display: inline-block; vertical-align: top; padding: 5px; border-radius: 10px;}
+section{padding: 5;}
+.sub {text-align: center; margin: 5px;}
