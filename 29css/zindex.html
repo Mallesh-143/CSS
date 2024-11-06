@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .container, .con2{
+          width: 100%;
+            height: auto;
+      }
+
+      .nav {
+        display: flex ;
+        background-color: aliceblue;
+        width: 100%;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+      }
+      #checkbox{
+        display: none ;
+
+      }
+      .ham{
+        display: none;
+    width: 50px;
+    height: 40px;
+  }
+      .textnav{
+        display: flex;
+
+      }
+
+      button {
+        font-size: 15px;
+        font-family: Verdana, sans-serif;
+        background-color: aliceblue;
+        margin: 20px;
+        text-decoration: none;
+        border: 0;
+        letter-spacing: 3px;
+      }
+      .br {
+        position: absolute;
+        font-size: 36px;
+        font-family: Verdana, sans-serif;
+        color: white;
+        z-index: 1;
+      }
+      .aimage {
+        display: grid;
+        place-items: center;
+        width: 100%;
+      }
+      .img {
+        position: relative !important;
+        width: 100% !important;
+        z-index: -1 !important;
+        object-fit: cover;
+      }
+      .houses,.item {
+        position: relative;
+        margin: 10px;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+      }
+      div > img {
+        width: 100%;
+        /* height: 100%; */
+      }
+      .Projects,
+      .con2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+      }
+      span {
+        padding: 7px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: rgb(3, 84, 3);
+        color: white;
+        z-index: 1;
+      }
+      h3 {
+        border-bottom: 2px solid rgb(230, 225, 225);
+        padding: 20px;
+      }
+      .Contact {
+        padding: 10px;
+        background-color: aliceblue;
+        width: 100%;
+        margin: 0;
+      }
+      @media screen and (max-width: 768px) {
+  .Projects, .con2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 350px) {
+  .Projects, .con2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .textnav{
+      display: none;
+    }
+
+    .ham{
+      display: block;
+    }
+    .ham:hover{
+      background-color: blue;
+      .textnav{
+        display: block;
+      }
+    }
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div>
+          <button><b>BR</b> Architects</button>
+        </div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox"><img class="ham" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOS9EEOhmjbrqupspcZiT1URXVGR7EGcs6AQ&s" alt=""></label>
+        <div class="textnav">
+          <button>Projects</button><button>About</button
+          ><button>Contact</button>
+        </div>
+      </div>
+      <div class="aimage">
+        <img
+          class="img"
+          src="https://www.w3schools.com/w3images/architect.jpg"
+          alt="">
+
+        <div class="br">
+          <b style="background-color: black;color;">BR</b> Architects
+        </div>
+      </div>
+      <h3>Projects</h3>
+      <div class="Projects">
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house5.jpg"
+            alt=""
+          /><span>Summer House</span>
+        </div>
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house2.jpg"
+            alt=""
+          /><span>Brick House</span>
+        </div>
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house3.jpg"
+            alt=""
+          /><span>Renovated</span>
+        </div>
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house4.jpg"
+            alt=""
+          /><span>Barn House</span>
+        </div>
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house2.jpg"
+            alt=""
+          /><span>Summer House</span>
+        </div>
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house5.jpg"
+            alt=""
+          /><span>Brick House</span>
+        </div>
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house5.jpg"
+            alt=""
+          /><span>Renovated</span>
+        </div>
+        <div class="houses">
+          <img
+            src="https://www.w3schools.com/w3images/house3.jpg"
+            alt=""
+          /><span>Barn House</span>
+        </div>
+      </div>
+      <h3>About</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        velit, molestias et nulla, consequatur ad, in assumenda fuga minima
+        distinctio molestiae. Ullam quae amet incidunt quod, doloremque odit
+        recusandae facilis! Doloribus omnis itaque totam dolor molestiae amet
+        aliquam at id quidem quia saepe, suscipit sunt explicabo tempora nam
+        maxime adipisci cum quae repudiandae nostrum dolorem voluptatibus. Modi
+        hic consectetur unde. Repudiandae fuga praesentium aperiam, adipisci
+        expedita officiis quaerat, placeat nam ad ipsa non laudantium nisi velit
+        quae tempore animi ab commodi, iste omnis aliquam ullam rerum. Eius
+        eligendi ratione illum. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et repellat aliquam cumque culpa recusandae voluptate
+        neque dicta, libero deleniti corporis perspiciatis placeat consequatur,
+        quidem numquam tenetur enim! Aperiam, soluta nemo. Voluptatum illo
+        soluta eligendi dolore, ex maiores doloribus fuga sapiente, eos repellat
+        minus nesciunt. Nisi nobis consectetur, dolores harum cumque tempore
+        eligendi asperiores amet! Tenetur hic eos distinctio eligendi ipsum!
+        Dolore, placeat soluta repellat alias ipsa eos modi iste id quam
+        sapiente ullam eum, ex sit? Labore, nemo praesentium similique, nam
+        placeat rerum incidunt quasi laborum ducimus enim culpa repellendus!
+        Nam, explicabo inventore iste consequatur neque laboriosam sunt
+        expedita, reiciendis officiis minima obcaecati minus maxime voluptatum
+        quia libero molestiae, at in quas culpa iusto unde beatae quo enim.
+        Obcaecati, earum!
+      </p>
+      <div class="con2">
+        <div class="item item1">
+          <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" >
+          <h3>John Doe</h3>
+          <h4>CEO & Founder</h4>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <button class="Contact">Contact</button>
+        </div>
+        <div class="item item2">
+          <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" >
+          <h3>John Doe</h3>
+          <h4>Architect</h4>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <button class="Contact">Contact</button>
+        </div>
+        <div class="item item3">
+          <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" >
+          <h3>Mike Ross</h3>
+          <h4>Architect</h4>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <button class="Contact">Contact</button>
+        </div>
+        <div class="item item4">
+          <img src="https://www.w3schools.com/w3images/team4.jpg" alt="" >
+          <h3>John Doe</h3>
+          <h4>CEO & Founder</h4>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <button class="Contact">Contact</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
